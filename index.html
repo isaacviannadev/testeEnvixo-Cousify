@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Coursify.Me</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formCard">
+
+            <img src="/assets/logo.svg" alt="Coursify Logo">
+
+            <h3>Seja bem vindo ao</h3>
+            <h2>Coursify.Me Enterprise</h2>
+
+            <p>Although the bobcat is rarely seen, it is the most common wildcat in North America.</p>
+            <div class="formOptions">
+                <button class="active" onclick={selectForm}>Cadastro</button>
+                <button class="login" onclick={selectLogin}>Login</button>
+            </div>
+            <div class="registerForm ">
+                <form action="">
+                    <input required type="text" placeholder="Nome da Escola">
+                    <input required type="email" placeholder="Seu e-mail">
+                    <input required type="password" placeholder="Crie uma senha">
+                    <div class="inputGroupPhone">
+                        <div class="IDD">
+                            <select placeholder="+55" name="IDD" id="IDD">
+                            <option value="1">+55</option>
+                            <option value="2">+1</option>
+                            <option value="3">+20</option>
+                            <option value="4">+547</option>
+                          </select>
+                        </div>
+
+                        <input id="tel" required type="tel" placeholder="00 00000-0000" maxlength="13">
+
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="loginForm disable">
+                <form action="">
+                    <input required type="email" placeholder="E-mail">
+                    <input required type="password" placeholder="Senha">
+                    <a href="#"><span>Esqueci minha senha</span></a>
+                    <div class="btn">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <footer>
+                <small>2020 &copy; Coursify.Me. Todos os direitos reservados</small>
+            </footer>
+        </div>
+
+
+        <div class="imgCarrousel">
+            <img class="selected" src="/assets/image_01.svg" alt="Teacher">
+            <img src="/assets/image_02.svg" alt="Student">
+            <div class="bullet selected "></div>
+            <div class="bullet blt2 "></div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
